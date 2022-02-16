@@ -11,9 +11,6 @@ else{
 ?>
 
 
-
-
-
 <html>
 <head></head>
 <body>
@@ -21,12 +18,9 @@ else{
     <br>
     <br>
     [<a href="?controller=pages&action=home"> HOME </a>]
-<<<<<<< HEAD
     [<a href="?controller=hospital&action=index"> HOSPITAL </a>]
-=======
     [<a href="?controller=pages&action=home"> MAX_PER_DAY </a>]
 
->>>>>>> 13ec618823579c3b58a2eca932f84b39a374dd36
     <br> 
     <?php require_once("routes.php");?>
 </body>
