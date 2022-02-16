@@ -1,6 +1,6 @@
 <?php 
-$controllers = array('pages'=>['home','error'],
-'hospital'=>['index']);
+$controllers = array('pages'=>['home','error'],'max_per_day'=>['index']);
+
 function call($controller,$action){
     require_once("controllers/".$controller."_controller.php");
     switch($controller)
@@ -10,6 +10,9 @@ function call($controller,$action){
         case"hospital":
             $controller = new hospital();break;
         
+            $controller = new PagesController();
+        break;    
+
 
     }
     $controller->{$action}();
