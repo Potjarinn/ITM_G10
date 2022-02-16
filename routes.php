@@ -1,13 +1,15 @@
 <?php 
-$controllers = array('pages'=>['home','error']);
-
+$controllers = array('pages'=>['home','error'],
+'hospital'=>['index']);
 function call($controller,$action){
     require_once("controllers/".$controller."_controller.php");
     switch($controller)
     {
         case"pages": 
-            $controller = new PagesController();
-        break;
+            $controller = new PagesController();break;
+        case"hospital":
+            $controller = new hospital();break;
+        
 
     }
     $controller->{$action}();
